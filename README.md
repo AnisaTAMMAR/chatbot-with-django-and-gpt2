@@ -24,79 +24,79 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants installés :
    git clone https://github.com/AnisaTAMMAR/chatbot-with-django-and-gpt2
    cd chatbot-with-django-and-gpt2
    ```
-Créez un environnement virtuel et activez-le :
+2.Créez un environnement virtuel et activez-le :
 
 ```bash
 python -m venv venv
 source venv/bin/activate  # Sur Windows : venv\Scripts\activate
 ```
-Installez les dépendances du projet :
+3.Installez les dépendances du projet :
 
 ```bash
 pip install -r requirements.txt
 ```
-Téléchargez le modèle GPT-2 (si nécessaire) et placez-le dans le dossier approprié.
+4.Téléchargez le modèle GPT-2 (si nécessaire) et placez-le dans le dossier approprié.
 
-Appliquez les migrations de la base de données :
+5.Appliquez les migrations de la base de données :
 
 ```bash
 python manage.py migrate
 ```
-Lancez le serveur de développement :
+6.Lancez le serveur de développement :
 
 ```bash
 python manage.py runserver
 ```
-Accédez à l'application via votre navigateur à l'adresse :
+7.Accédez à l'application via votre navigateur à l'adresse :
 
 
 ```bash
 http://127.0.0.1:8000/
 ```
-Structure du projet
-chatbot/ : Application Django principale.
+#Structure du projet
+-chatbot/ : Application Django principale.
 
-models.py : Modèles de base de données.
+   -models.py : Modèles de base de données.
+   
+   -views.py : Logique de traitement des requêtes.
+   
+   -templates/ : Fichiers HTML pour l'interface utilisateur.
 
-views.py : Logique de traitement des requêtes.
+-gpt2/ : Module pour l'intégration de GPT-2.
 
-templates/ : Fichiers HTML pour l'interface utilisateur.
+-manage.py : Script de gestion de Django.
 
-gpt2/ : Module pour l'intégration de GPT-2.
+-requirements.txt : Liste des dépendances Python.
 
-manage.py : Script de gestion de Django.
+#Utilisation
+1.Ouvrez l'interface du chatbot dans votre navigateur.
 
-requirements.txt : Liste des dépendances Python.
+2.Saisissez votre message dans la zone de texte et appuyez sur "Envoyer".
 
-Utilisation
-Ouvrez l'interface du chatbot dans votre navigateur.
+3.Le chatbot générera une réponse en utilisant GPT-2.
 
-Saisissez votre message dans la zone de texte et appuyez sur "Envoyer".
+#Déploiement
+1.Pour déployer ce projet sur un serveur en production, suivez les étapes suivantes :
 
-Le chatbot générera une réponse en utilisant GPT-2.
+2.Configurez un serveur web comme Nginx ou Apache.
 
-Déploiement
-Pour déployer ce projet sur un serveur en production, suivez les étapes suivantes :
+3.Utilisez un service comme Gunicorn pour servir l'application Django.
 
-Configurez un serveur web comme Nginx ou Apache.
+4.Configurez les variables d'environnement pour la production (e.g., DEBUG=False, SECRET_KEY, etc.).
 
-Utilisez un service comme Gunicorn pour servir l'application Django.
+5.Déployez sur une plateforme comme Heroku, AWS, ou DigitalOcean.
 
-Configurez les variables d'environnement pour la production (e.g., DEBUG=False, SECRET_KEY, etc.).
-
-Déployez sur une plateforme comme Heroku, AWS, ou DigitalOcean.
-
-Contribution
+#Contribution
 Les contributions sont les bienvenues ! Si vous souhaitez contribuer, suivez ces étapes :
 
-Forkez le projet.
+1.Forkez le projet.
 
-Créez une branche pour votre fonctionnalité (git checkout -b feature/NouvelleFonctionnalité).
+2.Créez une branche pour votre fonctionnalité (git checkout -b feature/NouvelleFonctionnalité).
 
-Committez vos changements (git commit -m 'Ajout d'une nouvelle fonctionnalité').
+3.Committez vos changements (git commit -m 'Ajout d'une nouvelle fonctionnalité').
 
-Pushez vers la branche (git push origin feature/NouvelleFonctionnalité).
+4.Pushez vers la branche (git push origin feature/NouvelleFonctionnalité).
 
-Ouvrez une Pull Request.
+5.Ouvrez une Pull Request.
 
 Fait avec ❤️ par TAMMAR Anisa
