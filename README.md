@@ -22,34 +22,37 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants installés :
 1. Clonez ce dépôt sur votre machine locale :
    ```bash
    git clone https://github.com/AnisaTAMMAR/chatbot-with-django-and-gpt2
-   cd votre-repo
+   cd chatbot-with-django-and-gpt2
+   ```
 Créez un environnement virtuel et activez-le :
 
-bash
-Copy
+```bash
 python -m venv venv
 source venv/bin/activate  # Sur Windows : venv\Scripts\activate
+```
 Installez les dépendances du projet :
 
-bash
-Copy
+```bash
 pip install -r requirements.txt
+```
 Téléchargez le modèle GPT-2 (si nécessaire) et placez-le dans le dossier approprié.
 
 Appliquez les migrations de la base de données :
 
-bash
-Copy
+```bash
 python manage.py migrate
+```
 Lancez le serveur de développement :
 
-bash
-Copy
+```bash
 python manage.py runserver
+```
 Accédez à l'application via votre navigateur à l'adresse :
 
-Copy
+
+```bash
 http://127.0.0.1:8000/
+```
 Structure du projet
 chatbot/ : Application Django principale.
 
