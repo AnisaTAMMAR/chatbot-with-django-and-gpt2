@@ -68,14 +68,15 @@ http://127.0.0.1:8000/
 
 -requirements.txt : Liste des dépendances Python.
 
-#Utilisation
+##Utilisation
 1.Ouvrez l'interface du chatbot dans votre navigateur.
 
 2.Saisissez votre message dans la zone de texte et appuyez sur "Envoyer".
 
 3.Le chatbot générera une réponse en utilisant GPT-2.
 
-#Déploiement
+##Déploiement
+
 1.Pour déployer ce projet sur un serveur en production, suivez les étapes suivantes :
 
 2.Configurez un serveur web comme Nginx ou Apache.
