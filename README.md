@@ -53,7 +53,8 @@ python manage.py runserver
 ```bash
 http://127.0.0.1:8000/
 ```
-#Structure du projet
+## Structure du projet
+
 -chatbot/ : Application Django principale.
 
    -models.py : Modèles de base de données.
@@ -68,14 +69,15 @@ http://127.0.0.1:8000/
 
 -requirements.txt : Liste des dépendances Python.
 
-##Utilisation
+## Utilisation
+
 1.Ouvrez l'interface du chatbot dans votre navigateur.
 
 2.Saisissez votre message dans la zone de texte et appuyez sur "Envoyer".
 
 3.Le chatbot générera une réponse en utilisant GPT-2.
 
-##Déploiement
+## Déploiement
 
 1.Pour déployer ce projet sur un serveur en production, suivez les étapes suivantes :
 
@@ -87,7 +89,7 @@ http://127.0.0.1:8000/
 
 5.Déployez sur une plateforme comme Heroku, AWS, ou DigitalOcean.
 
-#Contribution
+## Contribution
 Les contributions sont les bienvenues ! Si vous souhaitez contribuer, suivez ces étapes :
 
 1.Forkez le projet.
