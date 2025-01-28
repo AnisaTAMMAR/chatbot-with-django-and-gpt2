@@ -55,19 +55,19 @@ http://127.0.0.1:8000/
 ```
 ## Structure du projet
 
--chatbot/ : Application Django principale.
+- chatbot/ : Application Django principale.
 
-   -models.py : Modèles de base de données.
+   - models.py : Modèles de base de données.
    
-   -views.py : Logique de traitement des requêtes.
+   - views.py : Logique de traitement des requêtes.
    
-   -templates/ : Fichiers HTML pour l'interface utilisateur.
+   - templates/ : Fichiers HTML pour l'interface utilisateur.
 
--gpt2/ : Module pour l'intégration de GPT-2.
+- gpt2/ : Module pour l'intégration de GPT-2.
 
--manage.py : Script de gestion de Django.
+- manage.py : Script de gestion de Django.
 
--requirements.txt : Liste des dépendances Python.
+- requirements.txt : Liste des dépendances Python.
 
 ## Utilisation
 
